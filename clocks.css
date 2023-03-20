@@ -1,0 +1,37 @@
+#time {
+    background-image: url("clock2.png");
+    width: 320px;
+    height: 320px;
+    border-radius: 160px;
+    border: 5px solid green;
+}
+
+#ms {
+    width: 5px;
+    height: 160px;
+    background-color: blue;
+    position: relative;
+    left: 160px;
+    transform-origin: 0 160px;
+    animation: anim_ms 1s infinite;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+
+}
+
+@keyframes anim_ms {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#s{
+    width: 5px;
+    height: 90px;
+    background-color: red;
+    position: relative;
+    left: 160px;
+    transform-origin: 0 0px;
+    animation: anim_ms 60s infinite;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
